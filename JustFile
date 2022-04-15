@@ -1,0 +1,9 @@
+_default:
+
+miri:
+    MIRIFLAGS="\
+    -Zmiri-strict-provenance \
+    -Zmiri-check-number-validity \
+    -Zmiri-symbolic-alignment-check \
+    " \
+    cargo miri test
